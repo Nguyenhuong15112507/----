@@ -1,2 +1,17 @@
 mermaid-diagram.png
 .vscode/settings.json
+
+# OS
+.DS_Store
+
+# Sub-repos (managed separately)
+backend/
+frontend/
+
+# Data import/export files
+*.csv
+
+# Skill definition files
+code-review-skill.md
+senior-frontend-refactorer.md
+skill-freeze-prevention.md
