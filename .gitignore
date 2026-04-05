@@ -10,6 +10,7 @@ frontend/
 
 # Data import/export files
 *.csv
+*.xlsx
 
 # Skill definition files
 code-review-skill.md
