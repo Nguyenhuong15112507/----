@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta -->
-  <title>ここメモ (KokoMemo) - Quản lý cá nhân & Bản đồ du lịch thông minh</title>
-  <meta name="description" content="KokoMemo là ứng dụng quản lý đồ dùng, nhật ký cảm xúc và khám phá du lịch. Miễn phí, đa ngôn ngữ, dành cho mọi đối tượng." />
-  <meta name="keywords" content="KokoMemo, ここメモ, quản lý mỹ phẩm, ghi chú cá nhân, du lịch, cosmetic tracker, lifestyle app" />
-  <meta name="author" content="KokoMemo" />
+  <title>KokoMemo (ここメモ) - Nhắc nhở Refill Mỹ phẩm & Nhật ký Du lịch Việt Nhật</title>
+  <meta name="description" content="KokoMemo tự động tính toán thời gian sử dụng mỹ phẩm và nhắc bạn mua mới (refill) kịp thời. Ứng dụng quản lý cá nhân, nhật ký cảm xúc và bản đồ du lịch Việt Nhật 800+ địa điểm." />
+  <meta name="keywords" content="KokoMemo, nhắc mua mỹ phẩm, refill reminder, nhật ký du lịch, bản đồ nhật bản, bản đồ việt nam, cosmetic tracker, lifestyle app" />
+  <meta name="author" content="KokoMemo Team" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="ここメモ (KokoMemo) - Ứng dụng quản lý cá nhân toàn diện" />
-  <meta property="og:description" content="Quản lý đồ dùng, lưu giữ kỷ niệm và chia sẻ kinh nghiệm khám phá đa ngôn ngữ." />
+  <meta property="og:title" content="KokoMemo - Đừng để mỹ phẩm hết hạn. Đừng để kỷ niệm phai mờ." />
+  <meta property="og:description" content="Tự động nhắc refill mỹ phẩm, lưu giữ nhật ký và khám phá 800+ điểm đến Việt Nhật." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kokomemo-frontend-2mf7.vercel.app" />
+  <meta property="og:url" content="https://kokomemo-homepage.vercel.app" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://kokomemo-frontend-2mf7.vercel.app" />
 
@@ -53,9 +53,9 @@
       <!-- Desktop nav -->
       <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#features" class="nav-link" data-i18n="nav_features">Tính năng</a></li>
+        <li><a href="#story" class="nav-link" data-i18n="nav_story">Câu chuyện</a></li>
         <li><a href="#screenshots" class="nav-link" data-i18n="nav_screenshots">Giao diện</a></li>
         <li><a href="#travel" class="nav-link" data-i18n="nav_travel">Du lịch</a></li>
-        <li><a href="#testimonials" class="nav-link" data-i18n="nav_reviews">Đánh giá</a></li>
       </ul>
 
       <div class="nav-right">
@@ -78,9 +78,9 @@
     <div class="mobile-menu" id="mobile-menu" role="navigation" aria-hidden="true">
       <ul role="list">
         <li><a href="#features" class="mobile-link" data-i18n="nav_features">Tính năng</a></li>
+        <li><a href="#story" class="mobile-link" data-i18n="nav_story">Câu chuyện</a></li>
         <li><a href="#screenshots" class="mobile-link" data-i18n="nav_screenshots">Giao diện</a></li>
         <li><a href="#travel" class="mobile-link" data-i18n="nav_travel">Du lịch</a></li>
-        <li><a href="#testimonials" class="mobile-link" data-i18n="nav_reviews">Đánh giá</a></li>
       </ul>
       <div class="mobile-lang">
         <button class="lang-btn active" data-lang="vi">🇻🇳 VI</button>
@@ -103,8 +103,7 @@
           <p class="hero-subtitle" data-i18n="hero_subtitle">Bắt nguồn từ nhu cầu nhớ nơi đã mua mỹ phẩm và chia sẻ kinh nghiệm mua sắm — KokoMemo giờ đây là nơi lý tưởng để bất kỳ ai cũng có thể quản lý đồ dùng, ghi lại nhật ký và khám phá 800+ điểm đến du lịch thú vị.</p>
           <div class="hero-actions">
             <a href="https://kokomemo-frontend-2mf7.vercel.app" target="_blank" rel="noopener noreferrer"
-               class="btn btn-primary btn-lg" id="hero-cta" data-i18n="cta_start">✨ Bắt đầu miễn phí</a>
-            <a href="#features" class="btn btn-ghost btn-lg" data-i18n="cta_explore">Khám phá thêm →</a>
+               class="btn btn-primary btn-lg" id="hero-cta" data-i18n="cta_start">Dùng thử miễn phí ngay</a>
           </div>
           <div class="hero-stats">
             <div class="stat">
@@ -128,67 +127,10 @@
           <div class="phone-mockup-wrapper">
             <div class="phone-glow"></div>
             <div class="phone-mockup" id="main-phone">
-              <div class="phone-screen">
-                <div class="app-header-mock">
-                  <span>🌸 ここメモ</span>
-                  <span>🔔</span>
-                </div>
-                <div class="app-greeting">
-                  <div class="avatar-mock">🌸</div>
-                  <div>
-                    <div class="greeting-name" data-i18n="mock_hello">こんにちは! 🌸</div>
-                    <div class="greeting-sub" data-i18n="mock_today">Hôm nay bạn thế nào?</div>
-                  </div>
-                </div>
-                <div class="app-cards-row">
-                  <div class="app-card-mini pink">
-                    <div class="card-mini-num">12</div>
-                    <div class="card-mini-lbl" data-i18n="mock_using">Đang dùng</div>
-                  </div>
-                  <div class="app-card-mini purple">
-                    <div class="card-mini-num">5</div>
-                    <div class="card-mini-lbl" data-i18n="mock_expiring">Sắp hết</div>
-                  </div>
-                </div>
-                <div class="app-section-title" data-i18n="mock_expiring_soon">Sắp hết hạn ⚠️</div>
-                <div class="product-item-mock">
-                  <div class="product-icon-mock">✨</div>
-                  <div class="product-info-mock">
-                    <div class="product-name-mock">Serum Vitamin C</div>
-                    <div class="product-date-mock" data-i18n="mock_3days">Còn 3 ngày</div>
-                  </div>
-                  <div class="product-tag-mock warning">!</div>
-                </div>
-                <div class="product-item-mock">
-                  <div class="product-icon-mock">💄</div>
-                  <div class="product-info-mock">
-                    <div class="product-name-mock">Cushion Shiseido</div>
-                    <div class="product-date-mock" data-i18n="mock_7days">Còn 7 ngày</div>
-                  </div>
-                  <div class="product-tag-mock ok">✓</div>
-                </div>
-                <div class="category-row-mock">
-                  <div class="cat-chip">✨ Skincare</div>
-                  <div class="cat-chip">💄 Makeup</div>
-                  <div class="cat-chip">🛁 Body</div>
-                </div>
-              </div>
+              <img src="images/home screen.png" alt="KokoMemo Home Screen" class="real-screenshot" />
             </div>
             <div class="phone-mockup phone-side">
-              <div class="phone-screen small-screen">
-                <div class="map-mock-header" data-i18n="mock_travel">🗺️ Du lịch Việt-Nhật</div>
-                <div class="map-area-mock">
-                  <div class="map-dot dot1">🏯</div>
-                  <div class="map-dot dot2">🗼</div>
-                  <div class="map-dot dot3">🌊</div>
-                  <div class="map-dot dot4">⛩️</div>
-                </div>
-                <div class="dest-list-mock">
-                  <div class="dest-item-mock">🏯 Hà Nội</div>
-                  <div class="dest-item-mock">🗼 Tokyo</div>
-                  <div class="dest-item-mock">🌊 Đà Nẵng</div>
-                </div>
-              </div>
+              <img src="images/travel screen.png" alt="KokoMemo Travel Screen" class="real-screenshot" />
             </div>
           </div>
         </div>
@@ -205,75 +147,62 @@
         </div>
         <div class="features-grid">
 
-          <!-- Thêm ảnh cho Product Management -->
-          <article class="feature-card has-image" id="feat-inventory">
+          <!-- Chức năng chính: Lưu sản phẩm & Vị trí -->
+          <article class="feature-card feature-card--highlight has-image" id="feat-inventory">
             <div class="feature-card-img-wrapper">
-              <img src="images/feat-products.jpg" class="feature-card-img" alt="Cosmetics Management" loading="lazy" />
+              <img src="images/feat-products.jpg" class="feature-card-img" alt="Quản lý vị trí cửa hàng và giá mỹ phẩm" loading="lazy" />
             </div>
             <div class="feature-card-content">
-              <div class="feature-icon">✨</div>
-              <h3 class="feature-title" data-i18n="feat1_title">Quản lý Đồ dùng thông minh</h3>
-              <p class="feature-desc" data-i18n="feat1_desc">Theo dõi hạn sử dụng mỹ phẩm, đồ gia dụng. Nhận thông báo trước khi hết hạn để không bao giờ lãng phí!</p>
+              <div class="feature-badge-highlight">Ưu tiên số 1 🏆</div>
+              <div class="feature-icon">📍</div>
+              <h3 class="feature-title" data-i18n="feat1_title">Nhớ đúng tiệm, mua đúng giá</h3>
+              <p class="feature-desc" data-i18n="feat1_desc">Lưu lại chính xác cửa hàng (shop) bạn đã mua sản phẩm và giá tiền tại đó. KokoMemo giúp bạn so sánh giá giữa các hiệu thuốc (drugstore) Nhật để luôn mua được giá hời nhất.</p>
               <ul class="feature-list">
-                <li data-i18n="feat1_l1">✅ Nhắc nhở hạn sử dụng</li>
-                <li data-i18n="feat1_l2">✅ Theo dõi chu kỳ tiêu dùng</li>
-                <li data-i18n="feat1_l3">✅ Quản lý nhiều danh mục</li>
-                <li data-i18n="feat1_l4">✅ Lưu link mua lại</li>
+                <li data-i18n="feat1_l1">📍 Lưu vị trí shop đã mua</li>
+                <li data-i18n="feat1_l2">💰 So sánh giá các cửa hàng</li>
+                <li data-i18n="feat1_l3">📅 Tự động nhắc refill khi hết</li>
+                <li data-i18n="feat1_l4">🛍️ Quản lý sản phẩm theo shop</li>
               </ul>
             </div>
           </article>
           
-          <!-- Thêm ảnh cho Journal -->
-          <article class="feature-card feature-card--highlight has-image" id="feat-journal">
+          <!-- Wishlist & Review -->
+          <article class="feature-card has-image" id="feat-wishlist">
             <div class="feature-card-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=500&h=300&fit=crop" class="feature-card-img" alt="Notes and Journal" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=500&h=300&fit=crop" class="feature-card-img" alt="Wishlist & Reviews" loading="lazy" />
             </div>
             <div class="feature-card-content">
-              <div class="feature-badge-highlight" data-i18n="feat2_badge">Được yêu thích nhất 💕</div>
-              <div class="feature-icon">📓</div>
-              <h3 class="feature-title" data-i18n="feat2_title">Nhật ký & Ghi chú nhanh</h3>
-              <p class="feature-desc" data-i18n="feat2_desc">Lưu giữ tâm trạng trong ngày và chép lại những ý tưởng, ghi chú bất chợt một cách nhanh chóng.</p>
+              <div class="feature-badge-highlight" data-i18n="feat2_badge">Dễ dàng ghi nhớ 💕</div>
+              <div class="feature-icon">🎬</div>
+              <h3 class="feature-title" data-i18n="feat2_title">Wishlist & Link Review</h3>
+              <p class="feature-desc" data-i18n="feat2_desc">Lưu sẳn link TikTok/Youtube review của những món đồ dự định mua. Ghi chú công dụng chi tiết để không bị 'quên' khi đi mua sắm.</p>
               <ul class="feature-list">
-                <li data-i18n="feat2_l1">✅ Ghi nhận tâm trạng</li>
-                <li data-i18n="feat2_l2">✅ Đính kèm hình ảnh</li>
-                <li data-i18n="feat2_l3">✅ Ghi chú ý tưởng nhanh</li>
-                <li data-i18n="feat2_l4">✅ Tìm kiếm dễ dàng</li>
+                <li data-i18n="feat2_l1">✅ Lưu link review 'để dành'</li>
+                <li data-i18n="feat2_l2">✅ Danh sách Wishlist riêng</li>
+                <li data-i18n="feat2_l3">✅ Ghi chú công dụng chi tiết</li>
+                <li data-i18n="feat2_l4">✅ Tìm món chưa mua cực nhanh</li>
               </ul>
             </div>
           </article>
 
-          <article class="feature-card has-image" id="feat-travel">
+          <article class="feature-card has-image" id="feat-restock">
             <div class="feature-card-img-wrapper">
-              <img src="images/feat-travel.jpg" class="feature-card-img" alt="Travel Features" loading="lazy" />
+              <img src="images/feat-tasks.jpg" class="feature-card-img" alt="Thông báo nhắc nhở mua mới sản phẩm" loading="lazy" />
             </div>
             <div class="feature-card-content">
-              <div class="feature-icon">🗺️</div>
-            <h3 class="feature-title" data-i18n="feat3_title">Bản đồ Du lịch Song phương</h3>
-            <p class="feature-desc" data-i18n="feat3_desc">Khám phá 800+ địa điểm tại Việt Nam & Nhật Bản với mô tả đa ngôn ngữ.</p>
+              <div class="feature-icon">🔔</div>
+            <h3 class="feature-title" data-i18n="feat3_title">Tự động nhắc Restock</h3>
+            <p class="feature-desc" data-i18n="feat3_desc">Chỉ cần nhập ước tính thời gian sử dụng, KokoMemo sẽ dựa vào ngày bắt đầu dùng để tự động tính toán và gửi thông báo nhắc bạn mua mới trước khi hết hàng.</p>
             <ul class="feature-list">
-              <li data-i18n="feat3_l1">✅ 800+ điểm đến kiểm duyệt</li>
-              <li data-i18n="feat3_l2">✅ Tin tức du lịch cập nhật</li>
-              <li data-i18n="feat3_l3">✅ Cộng đồng chia sẻ</li>
-              <li data-i18n="feat3_l4">✅ Hỗ trợ VI / JP / EN</li>
+              <li data-i18n="feat3_l1">⏰ Thông báo đẩy thông minh</li>
+              <li data-i18n="feat3_l2">📅 Dự đoán chính xác ngày hết</li>
+              <li data-i18n="feat3_l3">🔄 Duy trì chu trình sử dụng</li>
+              <li data-i18n="feat3_l4">🔔 Không bao giờ bị gián đoạn</li>
             </ul>
             </div>
           </article>
 
-          <article class="feature-card has-image" id="feat-tasks">
-            <div class="feature-card-img-wrapper">
-              <img src="images/feat-tasks.jpg" class="feature-card-img" alt="Task Management" loading="lazy" />
-            </div>
-            <div class="feature-card-content">
-              <div class="feature-icon">✅</div>
-              <h3 class="feature-title" data-i18n="feat4_title">Quản lý Công việc</h3>
-              <p class="feature-desc" data-i18n="feat4_desc">Lên kế hoạch mua sắm, việc nhà và cá nhân. Không bao giờ bỏ lỡ điều gì quan trọng.</p>
-              <ul class="feature-list">
-                <li data-i18n="feat4_l1">✅ Task có độ ưu tiên</li>
-                <li data-i18n="feat4_l2">✅ Gắn link sản phẩm</li>
-                <li data-i18n="feat4_l3">✅ Đặt ngày hết hạn</li>
-              </ul>
-            </div>
-          </article>
+
 
           <article class="feature-card has-image" id="feat-themes">
             <div class="feature-card-img-wrapper">
@@ -291,25 +220,153 @@
             </div>
           </article>
 
-          <article class="feature-card has-image" id="feat-location">
+          <!-- Nhật ký & Note -->
+          <article class="feature-card has-image" id="feat-diary">
             <div class="feature-card-img-wrapper">
-              <img src="images/feat-location.jpg" class="feature-card-img" alt="Favorite Locations" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=500&h=300&fit=crop" class="feature-card-img" alt="Nhật ký & Ghi chú cá nhân" loading="lazy" />
             </div>
             <div class="feature-card-content">
-              <div class="feature-icon">📍</div>
-              <h3 class="feature-title" data-i18n="feat6_title">Lưu Địa điểm Yêu thích</h3>
-              <p class="feature-desc" data-i18n="feat6_desc">Lưu địa chỉ nhà, công ty và tích hợp Google Maps để điều hướng ngay lập tức.</p>
+              <div class="feature-icon">📝</div>
+              <h3 class="feature-title" data-i18n="feat4_title">Nhật ký & Ghi chú</h3>
+              <p class="feature-desc" data-i18n="feat4_desc">Lưu giữ tâm trạng mỗi ngày và những ý tưởng bất chợt. Dữ liệu được đồng bộ an toàn, bảo mật tuyệt đối cho riêng bạn.</p>
               <ul class="feature-list">
-                <li data-i18n="feat6_l1">✅ Lưu lịch trình theo địa điểm</li>
-                <li data-i18n="feat6_l2">✅ Tích hợp Google Maps</li>
-                <li data-i18n="feat6_l3">✅ Xem cửa hàng gần nhất</li>
+                <li data-i18n="feat4_l1">✅ Ghi nhận tâm trạng</li>
+                <li data-i18n="feat4_l2">✅ Đính kèm hình ảnh</li>
+                <li data-i18n="feat4_l3">✅ Tìm kiếm ghi chú nhanh</li>
+                <li data-i18n="feat4_l4">✅ Bảo mật mật khẩu App</li>
               </ul>
             </div>
           </article>
 
+          <!-- Bản đồ du lịch Việt Nhật -->
+          <article class="feature-card has-image" id="feat-travel-reviews">
+            <div class="feature-card-img-wrapper">
+              <img src="images/feat-travel.jpg" class="feature-card-img" alt="Review du lịch Việt Nhật" loading="lazy" />
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon">🗾</div>
+              <h3 class="feature-title" data-i18n="feat6_title">Review Du lịch Việt - Nhật</h3>
+              <p class="feature-desc" data-i18n="feat6_desc">Khám phá và đọc review về 800+ địa điểm tại Việt Nam & Nhật Bản. Cập nhật tin tức du lịch mới nhất ngay trong App.</p>
+              <ul class="feature-list">
+                <li data-i18n="feat6_l1">✅ 800+ địa điểm thật</li>
+                <li data-i18n="feat6_l2">✅ Review chi tiết địa phương</li>
+                <li data-i18n="feat6_l3">✅ Tin tức du lịch liên tục</li>
+                <li data-i18n="feat6_l4">✅ Hướng dẫn đi lại, chi phí</li>
+              </ul>
+            </div>
+          </article>
+
+
+
         </div>
       </div>
     </section>
+
+    <!-- ====== OUR STORY ====== -->
+    <section class="story section" id="story">
+      <div class="container story-grid">
+        <div class="story-content">
+          <span class="section-badge" data-i18n="story_badge">Từ ý tưởng đến hiện thực</span>
+          <h2 class="section-title" data-i18n="story_title">KokoMemo bắt đầu như thế nào? 🌸</h2>
+          <p class="section-desc" data-i18n="story_p1">Đang sinh sống tại Nhật, tôi thường xuyên mua mỹ phẩm, thực phẩm chức năng qua các review. Nhưng có một nỗi khổ: Không phải cửa hàng nào cũng có món đồ đó, và tôi thường xuyên quên mất mình đã mua nó ở hiệu thuốc nào với giá bao nhiêu.</p>
+          <p class="section-desc mt-4" data-i18n="story_p2">KokoMemo ra đời để giúp bạn lưu lại chính xác vị trí cửa hàng, giá mua và công dụng của từng món đồ. Không chỉ vậy, bạn còn có thể lưu lại các link review 'để dành' cho những món chưa kịp mua.</p>
+          <div class="story-highlight p-4 bg-white rounded-lg border border-pink-200 mt-6 shadow-sm">
+             <p class="section-desc italic" data-i18n="story_p3">Từ một cuốn sổ tay cá nhân, chúng tôi phát triển KokoMemo thành cộng đồng chia sẻ địa điểm thực tế - nơi mọi người giúp nhau mua sắm thông minh hơn tại Nhật Bản và Việt Nam.</p>
+          </div>
+        </div>
+        <div class="story-visual">
+          <div class="story-mockup-container">
+             <div class="floating-shops">
+                <span class="shop-badge">Matsumoto Kiyoshi</span>
+                <span class="shop-badge">Don Quijote</span>
+                <span class="shop-badge">Welcia</span>
+             </div>
+             <img src="images/hero-banner.jpg" alt="Japan Shopping Story" class="story-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PAIN POINTS (Những phiền não) ====== -->
+    <section class="problems section dark-theme" id="problems">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge prob-badge" data-i18n="prob_badge">BẠN CÓ GẶP NHỮNG TÌNH HUỐNG NÀY?</span>
+          <h2 class="section-title text-white" data-i18n="prob_title">Những phiền não nhỏ tưởng không đáng, mà rất đáng</h2>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon">🧴</div>
+            <h3 class="problem-title" data-i18n="prob1_title">Hết serum giữa chừng, bỏ dở routine</h3>
+            <p class="problem-desc" data-i18n="prob1_desc">Tìm mãi không ra, đặt ship thì phải chờ 2–3 ngày. Cả tuần da bị ảnh hưởng.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🧄</div>
+            <h3 class="problem-title" data-i18n="prob2_title">Vào bếp mới phát hiện hết gia vị</h3>
+            <p class="problem-desc" data-i18n="prob2_desc">Tỏi, nước mắm, dầu ăn... cứ đến lúc cần mới biết là hết. Phải chạy ra tiệm gấp.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📱</div>
+            <h3 class="problem-title" data-i18n="prob3_title">Ghi note rồi vẫn quên</h3>
+            <p class="problem-desc" data-i18n="prob3_desc">Nhắc trên điện thoại không đúng thời điểm, ghi sổ thì lại quên nhìn vào.</p>
+          </div>
+        </div>
+        <div class="problem-footer">
+          <div class="arrow-down">↓</div>
+          <p class="footer-msg" data-i18n="prob_footer">KokoMemo tự tính — tự nhắc — đúng lúc bạn cần 🌸</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== APP SHOWCASE (Nhập một lần, nhắc mãi mãi) ====== -->
+    <section class="app-showcase section" id="showcase">
+      <div class="container">
+        <div class="section-header">
+           <h2 class="section-title showcase-main-title" data-i18n="showcase_title">Nhập một lần, app nhắc mãi mãi</h2>
+           <p class="section-subtitle" data-i18n="showcase_subtitle">Bạn chỉ cần cho biết dùng sản phẩm từ ngày nào và ước tính dùng bao lâu — KokoMemo tự lo phần còn lại.</p>
+        </div>
+
+        <div class="showcase-item">
+          <div class="showcase-content">
+            <span class="feature-badge-soft" data-i18n="showcase_badge">🌟 Core Feature</span>
+            <h2 class="showcase-item-title" data-i18n="feat_refill_title">Refill reminder thông minh</h2>
+            <p class="showcase-item-desc" data-i18n="feat_refill_desc">Nhập ngày bắt đầu dùng + ước tính bao lâu hết. KokoMemo tự tính ngày cạn sản phẩm và nhắc bạn đặt mua mới — đúng lúc, không sớm không muộn.</p>
+            <ul class="showcase-list">
+               <li data-i18n="feat_refill_l1">Hoạt động cho mỹ phẩm, thực phẩm, gia vị và đồ gia dụng</li>
+               <li data-i18n="feat_refill_l2">Nhắc trước 3, 7, hoặc 14 ngày tuỳ bạn chọn</li>
+               <li data-i18n="feat_refill_l3">Lưu link mua lại — restock chỉ một chạm</li>
+               <li data-i18n="feat_refill_l4">Xem toàn bộ lịch restock sắp tới trong tuần/tháng</li>
+            </ul>
+          </div>
+          <div class="showcase-visual">
+             <div class="phone-frame-showcase">
+                <img src="images/announce screen.png" alt="App Announce Screen" class="real-screenshot" />
+             </div>
+          </div>
+        </div>
+
+        <div class="showcase-item reverse">
+          <div class="showcase-visual">
+             <div class="phone-frame-showcase">
+                <img src="images/Daily screen.png" alt="App Daily Screen" class="real-screenshot" />
+             </div>
+          </div>
+          <div class="showcase-content">
+            <span class="feature-badge-soft pink-badge" data-i18n="feat_diary_badge">💕 Được yêu thích nhất</span>
+            <h2 class="showcase-item-title" data-i18n="feat_diary_title">Nhật ký cảm xúc & Ghi chú nhanh</h2>
+            <p class="showcase-item-desc" data-i18n="feat_diary_desc">Ghi lại tâm trạng trong ngày, lưu những ý tưởng chợt đến. Cuối năm nhìn lại, bạn sẽ thấy mình đã lớn thêm bao nhiêu.</p>
+            <ul class="showcase-list">
+               <li data-i18n="feat_diary_l1">Ghi cảm xúc hàng ngày với biểu tượng trực quan</li>
+               <li data-i18n="feat_diary_l2">Đính kèm hình ảnh vào từng trang nhật ký</li>
+               <li data-i18n="feat_diary_l3">Ghi chú nhanh ý tưởng bất chợt</li>
+               <li data-i18n="feat_diary_l4">Tìm kiếm lại bất kỳ ký ức nào dễ dàng</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- ====== SCREENSHOTS ====== -->
     <section class="screenshots section" id="screenshots">
@@ -322,23 +379,7 @@
         <div class="screenshots-showcase">
           <div class="screenshot-item" id="ss-home">
             <div class="screenshot-phone">
-              <div class="ss-screen">
-                <div class="ss-topbar"><span class="ss-logo">🌸 ここメモ</span><span>⚙️</span></div>
-                <div class="ss-hero-section">
-                  <div class="ss-avatar">🌸</div>
-                  <div class="ss-username" data-i18n="ss1_name">Cô chủ nhỏ ✨</div>
-                  <div class="ss-tagline" data-i18n="ss1_tag">Hôm nay bạn thế nào?</div>
-                </div>
-                <div class="ss-quick-stats">
-                  <div class="ss-stat-card pink-bg"><span class="ss-stat-n">12</span><span class="ss-stat-l" data-i18n="mock_using">Đang dùng</span></div>
-                  <div class="ss-stat-card purple-bg"><span class="ss-stat-n">3</span><span class="ss-stat-l" data-i18n="ss1_stock">Dự trữ</span></div>
-                </div>
-                <div class="ss-diary-entry"><div class="ss-diary-icon">😊</div><div data-i18n="ss1_diary">Hôm nay có tâm trạng tốt!</div></div>
-                <div class="ss-products-mini">
-                  <div class="ss-prod">✨ Serum</div>
-                  <div class="ss-prod">💄 Cushion</div>
-                </div>
-              </div>
+                <img src="images/home screen.png" alt="Home Screen Screenshot" class="real-screenshot" />
             </div>
             <div class="screenshot-label">
               <h4 data-i18n="ss1_title">Trang chủ thông minh</h4>
@@ -347,22 +388,8 @@
           </div>
 
           <div class="screenshot-item screenshot-item--center" id="ss-product">
-            <div class="screenshot-phone screenshot-phone--large">
-              <div class="ss-screen">
-                <div class="ss-topbar"><span data-i18n="ss2_back">← Quay lại</span><span class="ss-logo" data-i18n="ss2_hdr">Đồ dùng</span><span>+</span></div>
-                <div class="ss-product-detail">
-                  <div class="ss-product-img">🌸</div>
-                  <div class="ss-product-name">Serum Vitamin C Plus</div>
-                  <div class="ss-product-brand">Shiseido · Skincare</div>
-                  <div class="ss-progress-bar"><div class="ss-progress-fill" style="width:35%"></div></div>
-                  <div class="ss-progress-label" data-i18n="ss2_progress">Còn 35% · 3 ngày nữa hết</div>
-                  <div class="ss-rating">⭐⭐⭐⭐⭐</div>
-                  <div class="ss-tags-row">
-                    <span class="ss-tag pink" data-i18n="ss2_tag1">Đang dùng</span>
-                    <span class="ss-tag purple" data-i18n="ss2_tag2">Yêu thích</span>
-                  </div>
-                </div>
-              </div>
+            <div class="screenshot-phone">
+                <img src="images/product detail.png" alt="Product Detail Screenshot" class="real-screenshot" />
             </div>
             <div class="screenshot-label">
               <h4 data-i18n="ss2_title">Chi tiết sản phẩm</h4>
@@ -372,22 +399,7 @@
 
           <div class="screenshot-item" id="ss-travel">
             <div class="screenshot-phone">
-              <div class="ss-screen">
-                <div class="ss-topbar"><span class="ss-logo" data-i18n="ss3_hdr">🗺️ Du lịch</span><span>🔍</span></div>
-                <div class="ss-travel-banner">
-                  <div class="ss-tb-flag">🇻🇳</div>
-                  <div class="ss-tb-text"><div class="ss-tb-title">Việt Nam</div><div class="ss-tb-sub" data-i18n="ss3_vn">400+ địa điểm</div></div>
-                </div>
-                <div class="ss-travel-banner ss-tb2">
-                  <div class="ss-tb-flag">🇯🇵</div>
-                  <div class="ss-tb-text"><div class="ss-tb-title">Nhật Bản</div><div class="ss-tb-sub" data-i18n="ss3_jp">400+ địa điểm</div></div>
-                </div>
-                <div class="ss-news-mini">
-                  <div class="ss-news-title" data-i18n="ss3_news">📰 Tin du lịch mới nhất</div>
-                  <div class="ss-news-item" data-i18n="ss3_n1">🌸 Mùa hoa anh đào Tokyo 2025</div>
-                  <div class="ss-news-item" data-i18n="ss3_n2">🌊 Lễ hội biển Đà Nẵng</div>
-                </div>
-              </div>
+                <img src="images/travel screen.png" alt="Travel Screen Screenshot" class="real-screenshot" />
             </div>
             <div class="screenshot-label">
               <h4 data-i18n="ss3_title">Khám phá du lịch</h4>
@@ -458,49 +470,9 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ====== TESTIMONIALS ====== -->
-    <section class="testimonials section" id="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge" data-i18n="test_badge">Người dùng nói gì</span>
-          <h2 class="section-title" data-i18n="test_title">Được cộng đồng tin yêu 💕</h2>
-        </div>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial-card" id="test-1">
-            <p class="testimonial-text" data-i18n="test1_text">"Từ khi dùng KokoMemo, mình không bao giờ quên hạn sử dụng mỹ phẩm và đồ gia dụng nữa. App dùng siêu tiện!"</p>
-            <footer class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1601288496920-b6154fe3626a?w=100&h=100&fit=crop" alt="Reviewer" class="real-avatar" />
-              <div>
-                <div class="author-name">Chị Thu Thủy</div>
-                <div class="author-desc" data-i18n="test1_role">Người nội trợ</div>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card testimonial-card--featured" id="test-2">
-            <p class="testimonial-text" data-i18n="test2_text">"Tính năng bản đồ du lịch và nhớ vị trí shop cực kỳ hữu ích! Mình note lại quán quen rất dễ dàng. Recommend 100%!"</p>
-            <footer class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Reviewer" class="real-avatar" />
-              <div>
-                <div class="author-name">Hoàng Kiên</div>
-                <div class="author-desc" data-i18n="test2_role">Nhân viên văn phòng</div>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card" id="test-3">
-            <p class="testimonial-text" data-i18n="test3_text">"Nhật ký cảm xúc là tính năng mình thích nhất. Sau một ngày dài, mở app ra ghi vài dòng cảm thấy nhẹ người hẳn."</p>
-            <footer class="testimonial-author">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Reviewer" class="real-avatar" />
-              <div>
-                <div class="author-name">Nam Phong</div>
-                <div class="author-desc" data-i18n="test3_role">Sinh viên đại học</div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
+
+
 
     <!-- ====== CTA ====== -->
     <section class="cta-section section" id="cta">
@@ -517,29 +489,33 @@
     </section>
   </main>
 
+  <!-- Sticky CTA Mobile -->
+  <div class="sticky-cta">
+    <a href="https://kokomemo-frontend-2mf7.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="cta_free">Dùng thử miễn phí</a>
+  </div>
+
   <!-- ====== FOOTER ====== -->
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-brand">
         <div class="footer-logo">🌸 ここメモ</div>
-        <p class="footer-tagline" data-i18n="footer_tagline">Người bạn đồng hành thông minh giúp quản lý cuộc sống của bạn.</p>
+        <p class="footer-tagline" data-i18n="footer_tagline">Ứng dụng nhắc nhở Refill & Nhật ký hành trình Việt - Nhật.</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
         <div class="footer-col">
-          <h4 data-i18n="footer_col1">Tính năng</h4>
-          <a href="#features" data-i18n="feat1_title">Quản lý đồ dùng</a>
-          <a href="#features" data-i18n="feat2_title">Nhật ký cảm xúc</a>
-          <a href="#travel" data-i18n="feat3_title">Bản đồ du lịch</a>
+          <h4 data-i18n="footer_col1">Pháp lý</h4>
+          <a href="#" data-i18n="footer_privacy">Chính sách bảo mật</a>
+          <a href="#" data-i18n="footer_terms">Điều khoản sử dụng</a>
         </div>
         <div class="footer-col">
-          <h4 data-i18n="footer_col2">Ứng dụng</h4>
-          <a href="https://kokomemo-frontend-2mf7.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="footer_signup">Đăng ký tài khoản</a>
-          <a href="https://kokomemo-frontend-2mf7.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="footer_login">Đăng nhập</a>
+          <h4 data-i18n="footer_col2">Liên hệ</h4>
+          <p class="footer-contact-info" data-i18n="footer_contact">Email hỗ trợ: support@kokomemo.app</p>
+          <a href="https://kokomemo-frontend-2mf7.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="footer_login">Đăng nhập App</a>
         </div>
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 KokoMemo (ここメモ). Made with 🌸 for Vietnamese-Japanese community.</p>
+      <p>© 2025 KokoMemo (ここメモ). Precision care for your daily items.</p>
     </div>
   </footer>
 
